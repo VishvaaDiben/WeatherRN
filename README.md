@@ -5,5 +5,5 @@
 
 | First Header  | Second Header |
 | ------------- | ------------- |
-| Content Cell  | - [x]  |
+| Content Cell  | - [x] - []     |
 | Content Cell  | Content Cell  |
