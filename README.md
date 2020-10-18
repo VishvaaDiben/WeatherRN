@@ -1,9 +1,2 @@
 # WeatherRN
-## Demo :
-### Apk file :
-
-### Feature
-| First Header  | Second Header |
-| ------------- | ------------- |
-| Content Cell  |       :x: |
-| Content Cell  | :heavy_check_mark:  |
+### Demo & Apk : https://drive.google.com/drive/folders/1p2Lx6b-fqsePRv6ROB0dV5hVDMQS6Iyj?usp=sharing 
