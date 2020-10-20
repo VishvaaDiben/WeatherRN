@@ -15,7 +15,7 @@ const Home = ({navigation}) => {
   });
   const [forecast, setForecast] = useState([]);
   const [threeHourData, setThreeHourData] = useState([]);
-  const API_key = '9895a789d1f377b18fb0e16958a4dd57'
+  const API_key = '9895a789d1f377b18fb0e16958a4dd57';
   const cityName = 'Kuala Lumpur';
 
   useEffect(() => {
@@ -51,18 +51,23 @@ const Home = ({navigation}) => {
   };
 
   return (
-    <View>
+    <View style={{flex: 1}}>
       <Card style={styles.cardSpace} onPress={() => dayCardClick(city.date)}>
         <Text style={styles.textProperties}>{city.name}</Text>
         <Text style={styles.textProperties}>
           {moment(city.date * 1000).format('dddd  D MMM YYYY')}
         </Text>
-        <Text style={styles.titleText}>{parseFloat(city.temp).toFixed()}&#8451;</Text>
+        <Text style={styles.titleText}>
+          {parseFloat(city.temp).toFixed()}&#8451;
+        </Text>
         <Text style={styles.textProperties}>{city.desc}</Text>
       </Card>
 
       <FlatList
         data={forecast.slice(1)}
+        contentContainerStyle={{
+          flexGrow: 1,
+        }}
         renderItem={({item}) => (
           <Card onPress={() => dayCardClick(item.dt)} style={styles.item}>
             <View
@@ -75,7 +80,7 @@ const Home = ({navigation}) => {
                   {moment(item.dt * 1000).format('dddd  D MMM YYYY')}
                 </Text>
                 <Text style={styles.listTextProperties}>
-                  {item.main.temp_min.toFixed()}&#8451; -{' '}
+                  {item.main.temp_min.toFixed()}&#8451; -
                   {item.main.temp_max.toFixed()}&#8451;
                 </Text>
                 <Text style={styles.listTextProperties}>

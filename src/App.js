@@ -1,7 +1,7 @@
 import {Icon, StatusBar} from 'react-native';
 
-import Details from './screens/Details';
-import Home from './screens/Home';
+import Details from './components/Details';
+import Home from './components/Home';
 import {NavigationContainer} from '@react-navigation/native';
 import React from 'react';
 import {createStackNavigator} from '@react-navigation/stack';

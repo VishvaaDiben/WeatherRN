@@ -9,7 +9,6 @@ const Details = (props) => {
   const {city} = props.route.params;
 
   const [dayWeather, setDayWeather] = useState(dayDetails);
-  console.log('dayWeather', dayDetails[0]);
   return (
     <View style={{flex: 1}}>
       <Card style={styles.cardSpace}>
